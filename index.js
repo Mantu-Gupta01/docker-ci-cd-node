@@ -12,6 +12,10 @@ app.get("/api/get",(req,res)=>{
     res.send({message:"Hello back to nodejs"});
 });
 
+app.get("/api/get1",(req,res)=>{
+    res.send({message:"Hello ci/cd is working"});
+});
+
 app.listen(port,()=>{
     console.log(`server is running on port ${port}`);
 });
