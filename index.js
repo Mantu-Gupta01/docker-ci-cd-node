@@ -13,7 +13,11 @@ app.get("/api/get",(req,res)=>{
 });
 
 app.get("/api/get1",(req,res)=>{
-    res.send({message:"Hello ci/cd is working"});
+    res.send({message:"Hello, ci/cd is working"});
+});
+
+app.get("/test",(req,res)=>{
+    res.send({message:"Hello world!"});
 });
 
 app.listen(port,()=>{
